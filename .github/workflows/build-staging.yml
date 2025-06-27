@@ -26,8 +26,7 @@ jobs:
           git clone https://github.com/simwrapper/simwrapper
           cd simwrapper
           git checkout bleeding
-          sed -i "s#'/'#'/bleeding/'#" vite.config.mts
-          sed -i "s#'/'#'/bleeding/'#" public/404.html
+          echo "bleeding.simwrapper.app" > public/CNAME
           cd ..
           mv simwrapper/* .
 
