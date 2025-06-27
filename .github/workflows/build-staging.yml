@@ -40,5 +40,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with: 
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.P_A_T }}
+          external_repository: simwrapper/bleeding
+          publish_branch: gh-pages
           publish_dir: ./dist
